@@ -1,12 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <div class="row">
+        <div class="col-md-6 p-5">
+            <img class="" src="images/mac.png"  alt="">
+        </div>
+        <div class="col-md-6">
+            <section>
+                <h1>Customize your Blue 24-inch iMac with Apple M1 chip</h1>
+                <p>Apple M1 chip with 8-core CPU with 4 performance cores and four efficiency cores, 7-core GPU and
+                    16-core Neural Engine 8GB unified memory256GB SSD storage. Two Thunderbolt/USB 4 points Magic Mouse
+                    Magic Keyboard-US English</p>
+                <div class="pb-5">
+                    <p class="fw-bold">Memory</p>
+                    <div class="">
+                        <button type="button" class="btn btn-outline-primary">8GB unified memory</button>
+                        <button type="button" class="btn btn-outline-primary">16GB unified memory</button>
+                    </div>
+                </div>
+
+                <div class="pb-5">
+                    <p class="fw-bold">Storage</p>
+                    <div class="">
+                        <button type="button" class="btn btn-outline-primary">256GB SSD storage</button>
+                        <button type="button" class="btn btn-outline-primary">512GB SSD storage</button>
+                        <button type="button" class="btn btn-outline-primary">1TB SSD storage</button>
+                    </div>
+                </div>
+
+                <div class="pb-5">
+                    <p class="fw-bold">Choose Your Delivery Option</p>
+                    <div class="">
+                        <button type="button" class="btn btn-outline-primary">Friday, August 25 Free Prime
+                            Delivery</button>
+                        <button type="button" class="btn btn-outline-primary">Friday, August 21 Delivery $20</button>
+                    </div>
+                </div>
+                <div class="pb-5">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th scope="row">Best Price</th>
+                                <td>$ <span id="best-price">1299</span></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Extra Memory Card</th>
+                                <td>$ <span id="memory-cost">0</span></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Extra Storage Card</th>
+                                <td>$ <span id="storage-cost">0</span></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Delivery Charge</th>
+                                <td>$ <span id="delivery-cost">0</span></td>
+                            </tr>
+                        </tbody>
+                        <thead>
+                            <tr>
+                                <th scope="col">Total Price</th>
+                                <th scope="col">$ <span>1299</span></th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+
+                <div>
+                    <p class="fw-bold">Add Promo Code</p>
+                    <div class="d-flex">
+                        <input type="text" class="form-control" id="">
+                        <button type="submit" class="btn btn-danger">Apply</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <h1>Total: $ <span>1299</span> </h1>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
 </body>
+
 </html>
