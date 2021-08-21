@@ -1,5 +1,7 @@
 console.log("Script added");
 let totalCost=0;
+
+// elements declaration 
 const memoryField = document.getElementById('memory-cost');
 const storageField = document.getElementById('storage-cost');
 const deliveryField = document.getElementById('delivery-cost');
@@ -9,6 +11,7 @@ const promoInputField = document.getElementById('code');
 const finalCostField = document.getElementById('final-cost');
 let iKnowPromo = false;
 
+// Calculation after promo code application
 function promo(){
     const inputCode = promoInputField.value;
     if(inputCode == 'stevekaku'){
@@ -23,7 +26,7 @@ function promo(){
         promoInputField.value = '';
     }
 }
-
+// Calculate Total Function
 function calculateTotal(){
     totalCost = parseInt(bestPriceField.innerText) + parseInt(memoryField.innerText) + parseInt(storageField.innerText) + parseInt(deliveryField.innerText);
     console.log(totalCost);
@@ -36,7 +39,7 @@ function calculateTotal(){
         finalCostField.innerText = totalCost;
     }
 }
-
+//memory selection
 document.getElementById('memory-button').addEventListener('click', function (event) {
     const number = event.target.innerText;
     if(event.target.innerText == '16GB unified memory'){
@@ -48,6 +51,8 @@ document.getElementById('memory-button').addEventListener('click', function (eve
 
     calculateTotal();
 });
+
+//storage selection 
 document.getElementById('storage-button').addEventListener('click', function (event) {
     const number2 = event.target.innerText;
     console.log(number2);
@@ -63,6 +68,7 @@ document.getElementById('storage-button').addEventListener('click', function (ev
     calculateTotal();
   
 });
+//delivery selection
 document.getElementById('delivery-button').addEventListener('click', function (event) {
     const number3 = event.target.innerText;
     console.log(number3);
