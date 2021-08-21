@@ -14,7 +14,7 @@
 <body>
     <div class="row">
         <div class="col-md-6 p-5">
-            <img class="" src="images/mac.png"  alt="">
+            <img class="" src="images/mac.png" alt="">
         </div>
         <div class="col-md-6">
             <section>
@@ -24,7 +24,7 @@
                     Magic Keyboard-US English</p>
                 <div class="pb-5">
                     <p class="fw-bold">Memory</p>
-                    <div class="">
+                    <div class="" id="memory-button">
                         <button type="button" class="btn btn-outline-primary">8GB unified memory</button>
                         <button type="button" class="btn btn-outline-primary">16GB unified memory</button>
                     </div>
@@ -32,7 +32,7 @@
 
                 <div class="pb-5">
                     <p class="fw-bold">Storage</p>
-                    <div class="">
+                    <div class="" id="storage-button">
                         <button type="button" class="btn btn-outline-primary">256GB SSD storage</button>
                         <button type="button" class="btn btn-outline-primary">512GB SSD storage</button>
                         <button type="button" class="btn btn-outline-primary">1TB SSD storage</button>
@@ -41,7 +41,7 @@
 
                 <div class="pb-5">
                     <p class="fw-bold">Choose Your Delivery Option</p>
-                    <div class="">
+                    <div class="" id="delivery-button">
                         <button type="button" class="btn btn-outline-primary">Friday, August 25 Free Prime
                             Delivery</button>
                         <button type="button" class="btn btn-outline-primary">Friday, August 21 Delivery $20</button>
@@ -66,28 +66,29 @@
                                 <th scope="row">Delivery Charge</th>
                                 <td>$ <span id="delivery-cost">0</span></td>
                             </tr>
-                        </tbody>
-                        <thead>
+
                             <tr>
-                                <th scope="col">Total Price</th>
-                                <th scope="col">$ <span>1299</span></th>
+                                <th class="text-danger fs-5" scope="col">Total Price</th>
+                                <th class="text-danger fs-5" scope="col">$ <span id="total">1299</span></th>
                             </tr>
-                        </thead>
+
+                        </tbody>
+
                     </table>
                 </div>
 
                 <div>
                     <p class="fw-bold">Add Promo Code</p>
                     <div class="d-flex">
-                        <input type="text" class="form-control" id="">
-                        <button type="submit" class="btn btn-danger">Apply</button>
+                        <input type="text" class="form-control" id="code">
+                        <button type="submit" class="btn btn-danger" onclick="promo()">Apply</button>
                     </div>
                 </div>
             </section>
         </div>
 
         <div class="d-flex justify-content-center">
-            <h1>Total: $ <span>1299</span> </h1>
+            <h1>Total: $ <span id="final-cost">1299</span> </h1>
         </div>
     </div>
 
